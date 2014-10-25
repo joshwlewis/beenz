@@ -1,0 +1,17 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rater: meatwad
+  ratee: frylock
+  beenz: 4
+
+two:
+  rater: frylock
+  ratee: shake
+  beenz: 2
+
+four:
+  rater: shake
+  ratee: meatwad
+  beenz: 1

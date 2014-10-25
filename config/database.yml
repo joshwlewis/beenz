@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: beenz
+  password: meowmeow
+  pool: 5
+
+development:
+  <<: *default
+  database: beenz_development
+
+test:
+  <<: *default
+  database: beenz_test

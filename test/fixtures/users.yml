@@ -1,0 +1,14 @@
+frylock:
+  name:            'Frylock'
+  email:           'frylock@email.com'
+  password_digest: <%= BCrypt::Password.create('frylock') %>
+
+meatwad:
+  name:            'Meatwad'
+  email:           'meatwad@email.com'
+  password_digest: <%= BCrypt::Password.create('meatwad') %>
+
+shake:
+  name:            'Master Shake'
+  email:           'shake@email.com'
+  password_digest: <%= BCrypt::Password.create('shake') %>
