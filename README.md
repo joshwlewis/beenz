@@ -25,3 +25,17 @@ To get this API up and running:
 
 Your server should be up and running at localhost:3000.
 
+## Endpoints
+
+### POST /profiles
+
+### POST /sessions
+
+### GET /users
+
+### GET /ratings
+
+### POST /ratings
+
+### PUT /ratings/:rating_id
+
