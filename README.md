@@ -1,4 +1,5 @@
 # Beenz
+[![Build Status](http://img.shields.io/travis/joshwlewis/beenz.svg?style=flat)](https://travis-ci.org/joshwlewis/beenz)
 A RESTful JSON API that implements MeowMeowBeenz functionality.
 
 ## About
