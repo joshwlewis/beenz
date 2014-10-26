@@ -8,6 +8,7 @@ gem 'jwt',                      '~> 1.0'
 gem 'jbuilder',                 '~> 2.0'
 gem 'bcrypt-ruby',              '~> 3.1'
 gem 'active_model_serializers', '~> 0.9'
+gem 'rack-cors',                '~> 0.2'
 
 group :development, :test do
   gem 'spring',         '~> 1.1'

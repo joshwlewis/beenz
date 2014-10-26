@@ -16,5 +16,12 @@ module Beenz
     config.serve_static_assets = false
     config.time_zone = 'Central Time (US & Canada)'
     config.autoload_paths << Rails.root.join('lib')
+
+    config.middleware.insert_after "Rack::Runtime", "Rack::Cors" do
+      allow do
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :post, :put, :options]
+      end
+    end
   end
 end
