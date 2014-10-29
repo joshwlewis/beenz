@@ -4,3 +4,10 @@ rvm:
 before_script:
   - psql -c 'create database beenz_test;' -U postgres
   - cp config/database.yml.travis config/database.yml
+deploy:
+  provider: heroku
+  api_key:
+    secure: PWXregu1crxHUNgB0A0PnaI9CGvbbSZCI/2IUBMoBNo21Rkt6KtvREivVLvBBIFD7ShbFy6FCeQKT7hFXExkLm1OUoo/oGKXoXVrC9GfbGHdEpLQgBJEhjuXcNaRhz2f15iDArQ10rfbFF0NyLYHRmhOH6YTujHNV1iHPH6ctzY=
+  app: beenz
+  on:
+    repo: joshwlewis/beenz
