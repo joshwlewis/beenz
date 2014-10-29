@@ -4,6 +4,8 @@ rvm:
 before_script:
   - psql -c 'create database beenz_test;' -U postgres
   - cp config/database.yml.travis config/database.yml
+before_deploy:
+  - "git checkout config/database*.yml"
 deploy:
   provider: heroku
   api_key:
