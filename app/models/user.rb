@@ -1,3 +1,4 @@
+require 'digest/md5'
 class User < ActiveRecord::Base
   has_secure_password
 
@@ -12,5 +13,14 @@ class User < ActiveRecord::Base
 
   validates_numericality_of :beenz, integer_only: true,
     greater_than_or_equal_to: 1, less_than_or_equal_to: 5
+
+  def email=(string)
+    super(string.strip.downcase)
+  end
+
+  def gravatar_url
+    hash = Digest::MD5.hexdigest(email)
+    "http://www.gravatar.com/avatar/#{hash}"
+  end
 
 end

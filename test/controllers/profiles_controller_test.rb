@@ -5,8 +5,8 @@ class ProfilesControllerTest < ActionController::TestCase
     post :create, name: 'Carl', email: 'carl@gmail.com', password: 'carl', password_confirmation: 'carl'
     json = JSON.parse(@response.body)
     assert_response :success
-    assert_equal    'Carl',           json['user']['name']
-    assert_equal    'carl@gmail.com', json['user']['email']
+    assert_equal    'Carl',           json['name']
+    assert_equal    'carl@gmail.com', json['email']
     assert_kind_of  String,           json['token']
   end
 
